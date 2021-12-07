@@ -1,0 +1,34 @@
+.parent {
+  background-color: aqua;
+  /* position: absolute; */
+  height: 100vh;
+
+  position: relative;
+}
+.child-one {
+  background-color: green;
+
+  /* position: relative;
+  top: 20px; */
+
+  /* position: fixed;
+  top: 0; */
+  /* it will become inline element and fixd */
+
+  position: sticky;
+  top: 0;
+  /* it is block element and fixd */
+
+  /* position: absolute;
+  top: 0px; */
+  /* it will become inline element and behind contain another block,it become nothing in the doc */
+}
+.child-two {
+  background-color: orangered;
+}
+.child-three {
+  background-color: pink;
+}
+div {
+  padding: 1rem;
+}

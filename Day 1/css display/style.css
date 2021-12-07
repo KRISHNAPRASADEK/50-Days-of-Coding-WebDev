@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: center; */
+  height: 1200px;
+}
+.block {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+
+  /* in block element it will consider height and width */
+}
+.block1 {
+  background-color: red;
+  display: inline-block;
+}
+.block2 {
+  background-color: blue;
+  display: inline-block;
+}
+.block3 {
+  background-color: green;
+  display: inline-block;
+
+  display: none;
+}
+
+a {
+  margin: 1rem;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+
+  /* in inline element it will ignore height and width */
+}
