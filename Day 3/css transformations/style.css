@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: brown;
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 400px;
+  /* transform: rotate(45deg); */
+  transition: all 0.1s ease-in-out;
+}
+
+.box:hover {
+  /* transform: rotate(360deg); */
+  /* transform: skew(40deg); */
+  /* transform: scale(2); */
+
+  /* transform: translateX(123px); */
+  /* transform: translateY(123px); */
+
+  transform: translate(123px, 123px);
+}

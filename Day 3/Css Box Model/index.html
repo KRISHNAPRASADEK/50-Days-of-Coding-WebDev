@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX MODEL</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #e6cbf8;
+      }
+      .container {
+        background-color: rgb(231, 230, 241);
+        border: 3px solid rgb(64, 6, 119);
+        /* padding: 9px; */
+        /* padding: 0px 0px 0px 0px; top right bottom left */
+        /* padding-top: 6px;
+        padding-left: 6px; */
+        /* margin: 34px; */
+        /* margin-top: 8px; */
+        /* margin-left: 9px; */
+        /* margin: 16px 10px 10px 10px; */
+        /* margin: 7px 40px; */
+        padding: 34px 19px;
+        margin: 14px 19px;
+        border-radius: 23px;
+        width: 533px;
+
+        /*if box sizing is not border box,then width increses
+        with padding increses */
+
+        box-sizing: border-box; /*when padding incresed width will not exceed*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio sint
+        a rem, odit saepe sapiente aliquam impedit aperiam consequatur suscipit
+        quidem fuga expedita, quia reprehenderit iure blanditiis temporibus eius
+        cupiditate recusandae.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio sint
+        a rem, odit saepe sapiente aliquam impedit aperiam consequatur suscipit
+        quidem fuga expedita, quia reprehenderit iure blanditiis temporibus eius
+        cupiditate recusandae.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio sint
+        a rem, odit saepe sapiente aliquam impedit aperiam consequatur suscipit
+        quidem fuga expedita, quia reprehenderit iure blanditiis temporibus eius
+        cupiditate recusandae.
+      </p>
+    </div>
+  </body>
+</html>
