@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <div id="content"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis
+        odit illum cupiditate error, dignissimos nemo laboriosam. Ab ratione
+        adipisci sequi ex, facilis cumque, inventore maiores explicabo porro
+        optio autem impedit earum. Vitae odio blanditiis necessitatibus, autem
+        soluta temporibus veritatis.
+      </p>
+
+      <script>
+        var string = "this is ";
+        var fname = "krish";
+        var lname = " prasad";
+        //backticks ``
+        var temp = `${fname} is bad guy`;
+
+        console.log(string + fname + lname + temp);
+
+        var len = fname.length;
+        console.log(`length of name is ${len}`);
+
+        console.log("Hello world\nHarry\tand\b");
+
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById("content").innerHTML =
+          "<h3>This is h3 heading</h3>";
+      </script>
+    </div>
+  </body>
+</html>

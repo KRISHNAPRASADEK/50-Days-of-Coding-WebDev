@@ -10,18 +10,20 @@
 
   /* position: relative;
   top: 20px; */
+  /* block elemnt and relative to its normal position */
 
-  /* position: fixed;
-  top: 0; */
-  /* it will become inline element and fixd */
+  /* position: fixed; */
+  /* top: 0; */
+  /* it will become inline element and fixd ,reltive to browser window*/
 
-  position: sticky;
-  top: 0;
-  /* it is block element and fixd */
+  /* position: sticky; */
+  /* top: 0; */
+  /* it is block element and fixd. relative to its normal position  */
 
-  /* position: absolute;
-  top: 0px; */
+  /* position: absolute; */
+  /* top: 0px; */
   /* it will become inline element and behind contain another block,it become nothing in the doc */
+  /* relative to 1st parent elemnt that has a position other than static or no such elmnt found the containing block is html */
 }
 .child-two {
   background-color: orangered;
@@ -31,4 +33,8 @@
 }
 div {
   padding: 1rem;
+}
+
+span {
+  color: aqua;
 }
