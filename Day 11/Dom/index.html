@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javscript Dom manipulation</title>
+    <style>
+      .bg {
+        background-color: aqua;
+      }
+
+      .border {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Heading</h1>
+    <ul id="list">
+      <li class="home list-home">home</li>
+      <li>contact</li>
+      <li>near me</li>
+    </ul>
+  </body>
+
+  <script>
+    let list = document.querySelectorAll("li");
+    // list[1].style.color = "red";
+    list[1].style.cssText = "color:red;background-color:black";
+
+    list.forEach((element) => {
+      element.style.color = "blue";
+    });
+
+    let ul = document.querySelector("ul");
+    ul.className = "bg";
+
+    console.log(ul.classList);
+
+    ul.classList.add("border");
+
+    ul.classList.remove("border");
+  </script>
+</html>

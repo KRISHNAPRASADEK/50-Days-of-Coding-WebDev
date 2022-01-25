@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="list">
+        <li id="list-item">Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+
+  <script>
+    const listItem = document.getElementById("list-item");
+    console.log(listItem.parentNode.parentElement.childNodes);
+    console.log(listItem.parentNode.parentElement.children);
+
+    let ul = document.querySelector(".list");
+
+    console.log(ul.firstChild);
+    console.log(ul.firstElementChild.outerHTML);
+    console.log(ul.lastElementChild.outerHTML);
+
+    console.log(listItem.nextElementSibling.outerHTML);
+    console.log(listItem.nextSibling);
+    console.log(listItem.previousSibling);
+    console.log(listItem.previousElementSibling);
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in Javascript</title>
+  </head>
+  <body>
+    <h1 class="heading">Hii there</h1>
+
+    <button class="btn">click</button>
+
+    <button class="press" onclick="Press()">press</button>
+  </body>
+
+  <script>
+    const h1 = document.querySelector(".heading");
+    const btn = document.querySelector(".btn");
+    const press = document.querySelector(".press");
+
+    btn.onclick = () => {
+      console.log("clicked");
+    };
+
+    Press = () => {
+      console.log("pressed");
+    };
+
+    btn.onmouseover = () => {
+      h1.style.color = "red";
+    };
+
+    btn.onmouseout = () => {
+      h1.style.color = "black";
+    };
+  </script>
+</html>
