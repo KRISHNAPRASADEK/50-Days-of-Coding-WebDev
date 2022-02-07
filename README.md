@@ -1,4 +1,4 @@
-# 100-Days-of-Coding-Web-Development
+# 50-Days-of-Coding-Web-Development
 
 Learning from scratch..
 
