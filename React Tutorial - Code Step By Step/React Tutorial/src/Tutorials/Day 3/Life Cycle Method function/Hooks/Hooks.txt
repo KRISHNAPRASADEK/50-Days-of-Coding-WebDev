@@ -1,0 +1,5 @@
+With Hooks,we can use class component features in functional component such as
+state, lifecycle, pure component etc.
+
+functional component support usesState.
+usesstate is an hook - a data container

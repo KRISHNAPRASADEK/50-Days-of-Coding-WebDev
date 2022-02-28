@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React using cdn</title>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script type="text/babel">
+      function Test() {
+        const bla = () => alert("hii");
+        return <button onClick={bla}>click me</button>;
+      }
+      class Hello extends React.Component {
+        render() {
+          return (
+            <div>
+              Hello React with code <Test />
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<Hello />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
