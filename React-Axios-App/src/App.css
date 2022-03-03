@@ -1,0 +1,19 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+select,
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: #4a7afd;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
